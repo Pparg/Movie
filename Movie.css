@@ -1,0 +1,134 @@
+
+.movies{
+    box-shadow: 2px 2px lightgray,-2px -2px lightgray;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    margin : 0px 10vw 40px 10vw;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    grid-auto-rows: 1fr;
+}
+.title{
+    text-align: center;
+    font-weight: bold;
+    color: white
+}
+.off{
+    display: none;
+}
+/* Div chico*/
+.div_small{
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+.div_small img{
+    width: 60%;
+    height: 90%;
+    border-radius: 15px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+.div_small .info_container{
+    display: grid;
+    place-items: center;
+    width: 75%;
+}
+.div_small h3{
+    text-align: center;
+    font-size: 16px;
+    font-weight:600;
+}
+.div_small p{
+    display: none;
+}
+/*Div grande*/
+.div_expand{
+    grid-column: 1/-1;
+    display: flex;
+    margin : 10px 0 20px 10px
+}
+.div_expand img{
+    width: 30%;
+    height: 90%;
+    border-radius: 15px;
+
+}
+.div_expand .info_container{
+    display: block;
+    padding: 0 30px 0 30px;
+}
+.div_expand h3{
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+}
+.div_expand p{
+    text-align: justify;
+}
+.btn_container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.btn{
+    width: 20%;
+    height: max-content;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 15px;
+    border: 1px solid;
+    box-shadow: 2px 2px black, -2px -2px black;
+
+}
+.form_container{
+    display: grid;
+    background-color: whitesmoke;
+    width: 90%;
+    margin: 30px auto 40px auto;
+    height: 15vh;
+    place-items: center;
+    border-radius: 15px;
+
+}
+.form{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50%;
+    place-items: center;
+}
+.input_field{
+    width: fit-content;
+    border: 2px solid;
+    height: 70%;
+    display: flex;
+    place-items: center;
+    border-radius: 15px ;
+    background-color: white;
+}
+.input_field:hover{
+    border: 2px solid blue
+}
+.input_field input{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px 0 10px;
+    border: none;
+    border-radius: 15px 0 0 15px;
+}
+.input_field i {
+    padding: 0 10px 0 10px;
+}
+form button{
+    width: 20%;
+    height: 70%;
+    font-size:medium;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 2px solid;
+}
+form button:hover{
+    border: 2px solid blue;
+}
